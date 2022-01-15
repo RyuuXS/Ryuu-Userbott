@@ -25,7 +25,7 @@ async def _(event):
     await event.edit("Deploying...")
 
     animation_chars = [
-        "Heroku Connecting To Latest Github Build (Kyuraxp/Kyura-Userbot)",
+        "Heroku Connecting To Latest Github Build (RyuuXS/Ryuu-Userbott)",
         f"Build started by user `{DEFAULTUSER}`",
         f"Deploy `535a74f0` by user `{DEFAULTUSER}`",
         "`Restarting Heroku Server...`",
@@ -45,7 +45,7 @@ async def _(event):
         "INFO - Skyzu-Userbot: Logged in as 557667062",
         "INFO - Skyzu-Userbot: Successfully...",
         "919852+00:00 app[worker.1]: 919 - Rose-Userbot -",
-        "INFO - ⚡ Kyura-Userbot ⚡ ⚙️ V5.0 [TELAH DIAKTIFKAN NGENTOOTT!]",
+        "INFO - 🗿 Ryuu-Userbot 🗿 ⚙️ V5.0 [TELAH DIAKTIFKAN NGENTOOTT!!]",
         "**Build Succeeded**",
     ]
 
