@@ -75,7 +75,7 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("**Restarting Kyura-Userbot...**")
+    await event.edit("**Restarting Ryuu-Userbot...**")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
@@ -117,11 +117,11 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """For .repo command, just returns the repo URL."""
     await wannasee.edit(
-        "**𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆 𝐌𝐄**\n"
-        "✣ **ᴍʏ ʀᴇᴘᴏ​** ➠ [ᴋʏᴜʀᴀ-ᴜsᴇʀʙᴏᴛ​](https://github.com/Kyuraxp/kyura-userbot)\n"
-        "✣ **Oᴡɴᴇʀ​** ➠ [ᴋʏᴜʀᴀ](t.me/kyuraonly)\n"
-        "✣ **Sᴜᴘᴘᴏʀᴛ​** ➠ [ɢʀᴏᴜᴘ](t.me/kyurasupport)\n"
-        "✣ **ᴘʀᴏᴊᴇᴄᴛs**​ ➠ [ᴄʜᴀɴɴᴇʟ](t.me/kyuraprojects)\n"
+        "**😍𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐘𝐎𝐔😍**\n"
+        "✣ **ᴍʏ ʀᴇᴘᴏ​** ➠ [ʀʏᴜᴜ-ᴜsᴇʀʙᴏᴛ​](https://github.com/RyuuXS/Ryuu-Userbott)\n"
+        "✣ **Oᴡɴᴇʀ​** ➠ [ᴋʏᴜʀᴀ](t.me/RYUUSHINNI)\n"
+        "✣ **Sᴜᴘᴘᴏʀᴛ​** ➠ [ɢʀᴏᴜᴘ](t.me/helpforRYUU)\n"
+        "✣ **ᴘʀᴏᴊᴇᴄᴛs**​ ➠ [ᴄʜᴀɴɴᴇʟ](t.me/Belajarbersamaryuu)\n"
     )
 
 
