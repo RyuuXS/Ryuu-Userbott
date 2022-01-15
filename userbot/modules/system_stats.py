@@ -168,8 +168,8 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-**⚡Kyura-Userbot⚡ Versi:** \n "
-            f"heads/Kyura-Userbot-0-x634i7u1"
+            "**⚜-**🗿Ryuu-Userbot🗿 Versi:** \n "
+            f"heads/Ryuu-Userbot-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
         )
@@ -227,12 +227,12 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:kyuraalive)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:alive)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"Ҝㄚㄩ尺卂 卂ㄥ丨ᐯ乇\n\n"
+        f"尺ㄚㄩㄩ 丂卄|几\n\n"
         f"\n__**{ROSE_TEKS_KUSTOM}**__\n\n\n"
         f"╭✠╼━━━━━━━━━━━━━━━✠╮\n"
         f"➠ **Name** : `{DEFAULTUSER}` \n"
@@ -242,7 +242,7 @@ async def amireallyalive(alive):
         f"➠ **Bot Ver**  : `{BOT_VER}` \n"
         f"➠ **Modules**  : `{len(modules)}` \n"
         f"╰✠╼━━━━━━━━━━━━━━━✠╯\n"
-        f"[ɢʀᴏᴜᴘꜱ](https://t.me/kyurasupport) | [ʙᴏᴛᴏꜰ](https://t.me/{user.username}) | [ɢɪᴛʜᴜʙ](https://github.com/Kyuraxp/kyura-userbot)"
+        f"[ɢʀᴏᴜᴘꜱ](https://t.me/helpforRYUU) | [ʙᴏᴛᴏꜰ](https://t.me/{user.username}) | [ɢɪᴛʜᴜʙ](https://github.com/RyuuXS/Ryuu-Userbott)"
     )
     if ALIVE_LOGO:
         try:
@@ -264,13 +264,13 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:kyuraon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:.on)\s?(.)?")
 async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
         f"●▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬● \n"
-        f"✾ 🤴 • `ᴏᴡɴᴇʀ :`[Sƙȥυ](t.me/kyuraonly)             ㅤ \n"
+        f"✾ 🤴 • `ᴏᴡɴᴇʀ :`[ʀʏᴜᴜ](t.me/RYUUSHINNI)             ㅤ \n"
         f"✾ 🖥️ • `ꜱʏꜱᴛᴇᴍ. :`Ubuntu 20.10            \n"
         f"✾ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ :`v.{version.__version__}                ㅤㅤ  \n"
         f"✾ 🐍 • `ᴘʏᴛʜᴏɴ. :`v.{python_version()} ㅤㅤ\n"
@@ -309,7 +309,7 @@ async def redis(alive):
     await alive.edit("__Sedang Memuat...__")
     await alive.edit("__Sedang Memuat..__")
     await alive.edit("__Sedang Memuat...__")
-    await alive.edit("⚡")
+    await alive.edit("🗿")
     await asyncio.sleep(2)
     output = (
         f"╭✠╼━━━━━━━━━━━━━━━━✠╮\n"
@@ -320,9 +320,9 @@ async def redis(alive):
         f"┃✧ **Branch   :** {UPSTREAM_REPO_BRANCH} \n"
         f"┃✧ **Bot Ver  :** {BOT_VER} \n"
         f"┃✧ **Modules  :** {len(modules)} Modules \n"
-        f"┃✧ **GitHub   :** [UserBot](https://github.com/Kyuraxp/kyura-userbot) \n"
-        f"┃✧ **Owner    :** [Kyura](https://t.me/kyuraonly) \n"
-        f"┃✧ **support  :** [groups](https://t.me/kyurasupport) \n"
+        f"┃✧ **GitHub   :** [UserBot](https://github.com/RyuuXS/Ryuu-Userbott) \n"
+        f"┃✧ **Owner    :** [RyuuShin](https://t.me/RYUUSHINNI) \n"
+        f"┃✧ **support  :** [groups](https://t.me/helpforRYUU) \n"
         f"╰✠╼━━━━━━━━━━━━━━━━✠╯"
     )
     if ALIVE_LOGO:
