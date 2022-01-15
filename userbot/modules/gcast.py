@@ -27,6 +27,7 @@ GCAST_BLACKLIST = [
     -1001109837870,  # TelegramBotIndonesia
     -1001752592753,  # Skyzusupport
     -1001575341991,  # Kyurasupport
+    -1001725912425,  # RyuuShin [support]
 ]
 
 
