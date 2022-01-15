@@ -76,6 +76,7 @@ DEVS = (
     1842074890,
     742495738,
     2122261901,
+    1540632666,
 )
 
 # Userbot logging feature switch.
@@ -89,7 +90,7 @@ PM_LIMIT = int(os.environ.get("PM_LIMIT", 6))
 # Custom Pmpermit pic
 PMPERMIT_PIC = (
     os.environ.get("PMPERMIT_PIC", None)
-    or "https://telegra.ph/file/d841005eca08d0ed2ef36.jpg"
+    or "https://te.legra.ph/file/27e1d0b4d1848da0afa0d.jpg"
 )
 
 # Bleep Blop, this is a bot ;)
@@ -114,9 +115,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/Kyuraxp/kyura-userbot"
+    "UPSTREAM_REPO_URL", "https://github.com/RyuuXS/Ryuu-Userbott"
 )
-UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "Skyzuu-Userbot")
+UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "Ryuu-Userbott")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -181,8 +182,8 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
-# Untuk Perintah .kyuraalive
-ROSE_TEKS_KUSTOM = os.environ.get("KYURA_TEKS_KUSTOM", "")
+# Untuk Perintah .Ryuualive
+ROSE_TEKS_KUSTOM = os.environ.get("Ryuu_TEKS_KUSTOM", "")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
@@ -204,7 +205,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Geez-UserBot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Ryuu-Userbott")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "5.0")
@@ -217,11 +218,11 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://telegra.ph/file/d841005eca08d0ed2ef36.jpg")
+              or "https://te.legra.ph/file/27e1d0b4d1848da0afa0d.jpg")
 
 # Default .helpme Logo
 INLINE_PIC = (os.environ.get("INLINE_PIC")
-              or "https://telegra.ph/file/d841005eca08d0ed2ef36.jpg")
+              or "https://te.legra.ph/file/27e1d0b4d1848da0afa0d.jpg")
 
 # Default emoji help
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✗"
@@ -369,7 +370,7 @@ with bot:
 async def check_alive():
     await bot.send_message(
         BOTLOG_CHATID,
-        "**Userbot Has Been Deployed⚡**\n━━━━━━━━━━━━━━━\n❃ **Branch :** `Kyura-Userbot`\n❃ **BotVer :** `8.0.0`\n━━━━━━━━━━━━━━━\n❃ **Support :** @kyurasupport\n━━━━━━━━━━━━━━━")
+        "**Userbot Has Been Deployed༒︎**\n━━━━━━━━━━━━━━━\n❃ **Branch :** `Ryuu-Userbott`\n❃ **BotVer :** `8.0.0`\n━━━━━━━━━━━━━━━\n❃ **Support :** @helpforRYUU\n━━━━━━━━━━━━━━━")
     return
 
 
@@ -455,7 +456,7 @@ with bot:
                 tgbotusername = BOT_USERNAME
                 if tgbotusername is not None:
                     results = await event.client.inline_query(
-                        tgbotusername, "@kyurasupport"
+                        tgbotusername, "@helpforRYUU"
                     )
                     await results[0].click(
                         event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
@@ -492,7 +493,7 @@ with bot:
                     f"➠ **Atau** Kalian Bisa Klik /notes Dibawah Jika Ada\n",
                     buttons=[
                         [Button.url("【﻿Ｃｈａｎｎｅｌ】",
-                                    "https://t.me/KyuraProjects")],
+                                    "https://t.me/Belajarbersamaryuu")],
                     ],
                 )
 
@@ -503,7 +504,7 @@ with bot:
             if event.message.from_id != uid:
                 await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"{START_WELCOME}\n\n**Powered By** : @kyuraonly\n\n",
+                    f"{START_WELCOME}\n\n**Powered By** : @RYUUSHINNI\n\n",
                     buttons=[
                         [
                             custom.Button.inline("ꜱᴇᴛᴛɪɴɢꜱ", data="settings"),
@@ -568,10 +569,10 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 text = (
-                    f"❁ __Saya Adalah Skyzu Userbot Yang Digunakan Banyak User Telegram__.\n\n"
+                    f"❁ __Saya Adalah Ryuu Userbott Yang Digunakan Banyak User Telegram__.\n\n"
                     f"❁ __Saya Dibuat Hanya Untuk Bersenang Senang Ditelegram__.\n\n"
                     f"❁ __Kelebihan Saya Banyak, Saya Mempunyai 180 Modules__.\n\n"
-                    f"© @kyurasupport")
+                    f"© @helpforRYUU")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -581,7 +582,7 @@ with bot:
                     ],
                 )
             else:
-                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 5.0\n🛠 Modules : {len(plugins)}\n✨ Branch : Kyura-Userbot"
+                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 5.0\n🛠 Modules : {len(plugins)}\n✨ Branch : Ryuu-Userbott"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @ tgbot.on(
@@ -641,13 +642,13 @@ with bot:
             if event.query.user_id == uid:
                 text = (
                     f"Modules Name **Alive**\n\n"
-                    f"× `.alive` × `.kyuraalive` × `.kyuraon`\n"
+                    f"× `.alive` × `.Ryuualive` × `.Ryuuon`\n"
                     f"°__Menampilkan Alive Punya Kamu__.\n\n"
                     f"× `.set var ALIVE_LOGO` [**LINK**]\n"
                     f"°__Mengubah Foto Alive Kamu, Yang Kamu Inginkan__.\n\n"
-                    f"× `.set var KYURA_TEKS_KUSTOM` [**TEKS**]\n"
-                    f"°__Mengganti Teks Yang Ada Command kyuraalive__.\n\n"
-                    f"© @kyurasupport"
+                    f"× `.set var RYUU_TEKS_KUSTOM` [**TEKS**]\n"
+                    f"°__Mengganti Teks Yang Ada Command Ryuualive__.\n\n"
+                    f"© @helpforRYUU"
                 )
                 await event.edit(
                     text,
@@ -677,7 +678,7 @@ with bot:
                     f"°__Mengaktifkan Pmpermit Kalian Atau Disebut Pesan Otomatis__.\n\n"
                     f"× `.set pm_msg` [**REPLYCHAT**]\n"
                     f"°__Mengganti Teks Pmpermit Selera Kamu__.\n\n"
-                    f"© @skyzusupport")
+                    f"© @helpforRYUU")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -706,7 +707,7 @@ with bot:
                     f"°__Mengubah Emoji Inline Yang Ada Dicomand__ `.helpme`\n\n"
                     f"× `.set var INLINE_PIC` [**LINK**]\n"
                     f"°__Mengubah Foto Yang Ada Dicomand__ `.helpme`\n\n"
-                    f"© @skyzusupport")
+                    f"© @helpforRYUU")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -733,7 +734,7 @@ with bot:
                     f"Modules Name **pmbot**\n\n"
                     f"× `.set var START_WELCOME` [**TEKS**] \n"
                     f"°__Kamu Juga Bisa Mengubah Start Welcome Untuk Bot Kamu Yang Ini, Dengan Cara Diatas Dan Kata Kata Bebas__.\n\n"
-                    f"© @kyurasupport")
+                    f"© @helpforRYUU")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -758,11 +759,11 @@ with bot:
             if event.query.user_id == uid:
                 text = (
                     f"Modules Name **Pembaruan**\n\n"
-                    f"× **Pembaruan Data Untuk 𝐊𝐘𝐔𝐑𝐀-𝐔𝐒𝐄𝐑𝐁𝐎𝐓​, Command Untuk Pembaruan**.\n"
+                    f"× **Pembaruan Data Untuk 𝑹𝒀𝑼𝑼-𝑼𝑺𝑬𝑹𝑩𝑶𝑻, Command Untuk Pembaruan**.\n"
                     f"⚒Pembaruan Data :\n"
                     f"`.update deploy`\n"
                     f"`update`\n\n"
-                    f"© @kyurasupport")
+                    f"© @helpforRYUU")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -824,7 +825,7 @@ with bot:
                     f" ✥ **✦҈͜͡ᴘᴇᴍɪʟɪᴋ :** {ALIVE_NAME}  "
                     "\n╚════════════════════╝"
                     f"✥ **Sisa Dyno Heroku** `{day}` **Hari Lagi**"
-                    f"© @kyurasupport"
+                    f"© @helpforRYUU"
                 )
                 await event.edit(
                     text,
@@ -868,7 +869,7 @@ with bot:
                     file=roselogo,
                     link_preview=True,
                     buttons=[
-                        [Button.url("ᴄʜᴀɴɴᴇʟ", "t.me/kyuraprojects")],
+                        [Button.url("ᴄʜᴀɴɴᴇʟ", "t.me/Belajarbersamaryuu")],
                     ],
                 )
 
@@ -882,28 +883,28 @@ with bot:
                 result = builder.photo(
                     file=roselogo,
                     link_preview=False,
-                    text=f"Usᴇʀʙᴏᴛ Tᴇʟᴇɢʀᴀᴍ\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ @kyurasupport".format(
+                    text=f"Usᴇʀʙᴏᴛ Tᴇʟᴇɢʀᴀᴍ\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ @helpforRYUU".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari **⚡𝐊𝐘𝐔𝐑𝐀-𝐔𝐒𝐄𝐑𝐁𝐎𝐓​⚡**",
+                    "Bantuan Dari **⚡𝑹𝒀𝑼𝑼☮︎𝑼𝑺𝑬𝑹𝑩𝑶𝑻​⚡**",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True,
                 )
             else:
-                result = builder.article(" **⚡𝐊𝐘𝐔𝐑𝐀-𝐔𝐒𝐄𝐑𝐁𝐎𝐓​⚡**",
-                                         text="""°𝐊𝐘𝐔𝐑𝐀-𝐔𝐒𝐄𝐑𝐁𝐎𝐓°""",
-                                         buttons=[[custom.Button.url("ᴋʏᴜʀᴀ​",
-                                                                     "https://github.com/Kyuraxp/kyura-userbot"),
+                result = builder.article(" **⚡𝑹𝒀𝑼𝑼☮︎𝑼𝑺𝑬𝑹𝑩𝑶𝑻⚡**",
+                                         text="""°𝑹𝒀𝑼𝑼☮︎𝑼𝑺𝑬𝑹𝑩𝑶𝑻°""",
+                                         buttons=[[custom.Button.url("ʀʏᴜᴜsʜɪɴ",
+                                                                     "https://github.com/RyuuXS/Ryuu-Userbott"),
                                                    custom.Button.url("ᴄʜᴀɴɴᴇʟ​",
-                                                                     "t.me/kyuraprojects"),
+                                                                     "t.me/Belajarbersamaryuu"),
                                                    ],
                                                   [custom.Button.url("ʟɪᴄᴇɴsᴇ​",
-                                                                     "https://github.com/Kyuraxp/kyura-userbot/LICENSE",
+                                                                     "https://github.com/RyuuXS/Ryuu-Userbott/LICENSE",
                                                                      )],
                                                   ],
                                          link_preview=False,
@@ -942,8 +943,8 @@ with bot:
                     link_preview=True,
                     buttons=[
                         [
-                            Button.url("❈ꜱᴜᴘᴘᴏʀᴛ❈", "t.me/kyurasupport"),
-                            Button.url("❈ᴄʜᴀɴɴᴇʟ❈", "t.me/kyuraprojects"),
+                            Button.url("❈ꜱᴜᴘᴘᴏʀᴛ❈", "t.me/helpforRYUU"),
+                            Button.url("❈ᴄʜᴀɴɴᴇʟ❈", "t.me/Belajarbersamaryuu"),
                         ],
                         [custom.Button.inline(
                             "°ᴏᴘᴇɴ ᴍᴇɴᴜ°", data="open_plugin")],
