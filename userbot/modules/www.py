@@ -17,11 +17,11 @@ from userbot import ALIVE_NAME, CMD_HELP, DEVS, StartTime
 from userbot.events import register
 
 absen = [
-    "**Eh ada kyura**",
+    "**Eh ada BossSaya**",
     "**Hadir ganteng** 🥵",
     "**Hadir bro** 😎",
     "**Hadir kak** 😉",
-    "**Hadir bang kyura** 😁",
+    "**Hadir bang Shin** 😁",
     "**Hadir kak maap telat** 🥺",
 ]
 
@@ -108,7 +108,7 @@ async def redis(pong):
     await pong.edit(
         f"**{ALIVE_NAME}**        \n"
         f"**➠Kecepatan : ** %sms  \n"
-        f"**➠Branch : ** Kyura-Userbot \n" % (duration)
+        f"**➠Branch : ** Ryuu-Userbot \n" % (duration)
     )
 
 
@@ -146,7 +146,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚡𝐊𝐘𝐔𝐑𝐀 𝐔𝐒𝐄𝐑𝐁𝐎𝐓​⚡**\n"
+        f"**༒︎𝑹𝒀𝑼𝑼 - 𝑼𝑺𝑬𝑹𝑩𝑶𝑻༒︎**\n"
         f"➠ __Signal__    __:__ "
         f"`%sms` \n"
         f"➠ __Uptime__ __:__ "
@@ -170,7 +170,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚡𝐊𝐘𝐔𝐑𝐀 𝐔𝐒𝐄𝐑𝐁𝐎𝐓​⚡**\n"
+        f"**༒︎𝑹𝒀𝑼𝑼 𝐔𝐒𝐄𝐑𝐁𝐎𝐓​༒︎**\n"
         f"** ➠  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
         f"** ➠  Uᴘᴛɪᴍᴇ  :** "
@@ -191,12 +191,12 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**PONG!!🏓**\n"
+        f"**🗿DELAY KAN!!**\n"
         f"➠ **ᴘɪɴɢ:** "
         f"`%sms` \n"
         f"➠ **ᴜᴘᴛɪᴍᴇ:** "
         f"`{uptime}` \n"
-        f"**✦҈͜͡ᴘᴇᴍɪʟɪᴋ:** `{ALIVE_NAME}`" % (duration)
+        f"**✰͜͡ᴍʏB⃝ᴏ͠ss:** `{ALIVE_NAME}`" % (duration)
     )
 
 
