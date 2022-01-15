@@ -180,18 +180,17 @@ async def redis(pong):
 
 
 @register(outgoing=True, pattern="^.ping$")
-async def redis(pong):
+async def redis(ping):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    pong = await edit_or_reply(ping, "**🖕**")
-    await pong.edit("**🖕**")
-    await pong.edit("**🖕🖕**")
-    await pong.edit("**🖕🖕🖕**")
-    await pong.edit("**🖕༒︎🖕 PONG!**")
+    xx = await edit_or_reply(ping, "**🖕**")
+    await xx.edit("**🖕**")
+    await xx.edit("**🖕🖕**")
+    await xx.edit("**🖕🖕🖕**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(
+    await xx.edit(
         f"**PONG!!🖕**\n"
         f"➠ **ᴘɪɴɢ:** "
         f"`%sms` \n"
