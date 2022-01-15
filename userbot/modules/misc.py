@@ -21,7 +21,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 REPOLINK = (
     str(UPSTREAM_REPO_URL)
     if UPSTREAM_REPO_URL
-    else "https://github.com/Askarbot/Skyzuu-Userbot"
+    else "https://github.com/RyuuXS/Ryuu-Userbott"
 )
 # ============================================
 
@@ -63,7 +63,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """For .shutdown command, shut the bot down."""
-    await event.edit("**Mematikan Kyura-Userbot....**")
+    await event.edit("**Mematikan Ryuu-Userbot....**")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -93,7 +93,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[⚡ Kyura-UserBot Repo](https://github.com/Kyuraxp/kyura-userbot/blob/skyzu-userBot/README.md)"
+        "\n[🗿 Ryuu-UserBot Repo](https://github.com/RyuuXS/Ryuu-Userbott/blob/skyzu-userBot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)"
     )
@@ -119,7 +119,7 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "**😍𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐘𝐎𝐔😍**\n"
         "✣ **ᴍʏ ʀᴇᴘᴏ​** ➠ [ʀʏᴜᴜ-ᴜsᴇʀʙᴏᴛ​](https://github.com/RyuuXS/Ryuu-Userbott)\n"
-        "✣ **Oᴡɴᴇʀ​** ➠ [ᴋʏᴜʀᴀ](t.me/RYUUSHINNI)\n"
+        "✣ **Oᴡɴᴇʀ​** ➠ [ʀʏᴜsʜɪɴ](t.me/RYUUSHINNI)\n"
         "✣ **Sᴜᴘᴘᴏʀᴛ​** ➠ [ɢʀᴏᴜᴘ](t.me/helpforRYUU)\n"
         "✣ **ᴘʀᴏᴊᴇᴄᴛs**​ ➠ [ᴄʜᴀɴɴᴇʟ](t.me/Belajarbersamaryuu)\n"
     )
