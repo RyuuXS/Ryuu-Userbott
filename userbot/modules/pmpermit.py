@@ -50,8 +50,8 @@ DEF_UNAPPROVED_MSG = (
     "**TOLONG JANGAN MELAKUKAN SPAM CHAT KEPADA MAJIKAN SAYA** \n"
     f"**YA KONTOL KARENA SAYA AKAN OTOMATIS MEMBLOKIR KAMU, TUNGGU SAMPAI {DEFAULTUSER} MENERIMA PESAN KAMU** \n"
     "╔═════════════════════╗\n"
-    "│○›Support : @helpforRYUU      \n"
-    f"│○›ᗷy : 𝑹𝒀𝑼𝑼 𝑺𝑯𝑰𝑵x​           \n"
+    "│○›Support :  @helpforRYUU      \n"
+    f"│○›ᗷy     : 𝑹𝒀𝑼𝑼 𝑺𝑯𝑰𝑵x​           \n"
     "╚═════════════════════╝"
 )
 # =================================================================
