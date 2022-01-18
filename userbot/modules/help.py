@@ -39,7 +39,6 @@ async def help(event):
             f"**◉ Bᴏᴛ ᴏꜰ {DEFAULTUSER}**\n**◉ Mᴏᴅᴜʟᴇꜱ : {len(modules)}**\n\n"
             "**• Mᴀɪɴ Mᴇɴᴜ :**\n"
             f"◉ {string}◉\n\n༆ **ɴᴏᴛᴇꜱ :**  `.help animasi`\n༆  sᴜᴘᴘᴏʀᴛ :  @RYUUSHINNI"
-            f"** KALIAN SEMUA KONTOLL🖕**"
         )
         await asyncio.sleep(1000)
         await event.delete()
