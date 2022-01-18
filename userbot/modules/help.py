@@ -38,7 +38,7 @@ async def help(event):
             "**🗿𝑹𝒀𝑼𝑼-𝑼𝑺𝑬𝑹𝑩𝑶𝑻🗿**\n\n"
             f"**◉ Bᴏᴛ ᴏꜰ {DEFAULTUSER}**\n**◉ Mᴏᴅᴜʟᴇꜱ : {len(modules)}**\n\n"
             "**• Mᴀɪɴ Mᴇɴᴜ :**\n"
-            f"◉ {string}◉\n\n༆ **ɴᴏᴛᴇꜱ :**  `.help animasi`\n༆  sᴜᴘᴘᴏʀᴛ :  @RYUUSHINNI"
+            f"◉ {string}◉\n\n༆ **ɴᴏᴛᴇꜱ :**  `.help animasi`\n༆  sᴜᴘᴘᴏʀᴛ :  **[ᴅᴇᴠ](https://t.me/RYUUSHINNI)**"
         )
         await asyncio.sleep(1000)
         await event.delete()
