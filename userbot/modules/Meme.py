@@ -3232,7 +3232,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "memes": "`.eye`\
+        "meme": "`.eye`\
 \nUsage: Lihat Sendiri.\
 \n\n`.earth`\
 \nusage: Memutar Bumi 🌎🌎\
