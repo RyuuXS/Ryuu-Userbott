@@ -91,7 +91,7 @@ PM_LIMIT = int(os.environ.get("PM_LIMIT", 6))
 # Custom Pmpermit pic
 PMPERMIT_PIC = (
     os.environ.get("PMPERMIT_PIC", None)
-    or "https://te.legra.ph/file/27e1d0b4d1848da0afa0d.jpg"
+    or "https://telegra.ph/file/8fa2671d2875df2aee7fb.mp4"
 )
 
 # Bleep Blop, this is a bot ;)
