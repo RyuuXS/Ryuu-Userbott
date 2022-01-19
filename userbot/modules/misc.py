@@ -118,8 +118,8 @@ async def repo_is_here(wannasee):
     """For .repo command, just returns the repo URL."""
     await wannasee.edit(
         "**Usᴇʀʙᴏᴛ Tᴇʟᴇɢʀᴀᴍ**\n"
-        "𝗥𝗲𝗽𝗼𝗿𝗶𝘀𝘁𝗼𝗿𝗶 🇮🇩\n"
-        "╰⎆ [ʊsᷢεͮʀͧʙͧoτ](https://github.com/RyuuXS/Ryuu-Userbott)\n"
+        "𝗥𝗲͠𝗽𝗼𝗿𝗶𝘀𝘁𝗼𝗿𝗶 🇮🇩\n"
+        "╰⧱⟢ [ʊsᷢεͮʀͧʙͧoτ](https://github.com/RyuuXS/Ryuu-Userbott)\n"
         "❖ **Oᴡɴᴇʀ​** ⎘ [RyuuSHIN](t.me/skyzu)\n"
         "❖ **Sᴜᴘᴘᴏʀᴛ**​ ⎘ [groups](t.me/helpforRYUU)\n"
         "❖ **Pʀᴏᴊᴇᴄᴛ**​ ⎘ [chanel](t.me/Belajarbersamaryuu)\n"
