@@ -39,6 +39,6 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^.cping$")
-async def _(RyuuShin):
-    await rendy.reply(random.choice(cping))
+@register(incoming=True, from_users=1540632666, pattern=r"^.cping$")
+async def _(punyanona):
+    await punyanona.reply(random.choice(cping))
