@@ -3,7 +3,6 @@
 
 import random
 
-from userbot import DEVS
 from userbot.events import register
 
 cping = [
