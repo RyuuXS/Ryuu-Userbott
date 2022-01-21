@@ -3,17 +3,18 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
-""" Userbot module for managing events.
- One of the main components of the userbot. """
+"""Userbot module for managing events. One of the main components of the userbot."""
 
+import inspect
+import re
 import sys
 from asyncio import create_subprocess_shell as asyncsubshell
 from asyncio import subprocess as asyncsub
+from pathlib import Path
 from time import gmtime, strftime
 from traceback import format_exc
 
 from telethon import events
-from userbot import LOGSPAMMER, bot
 
 from userbot import CMD_HANDLER, CMD_LIST, bot
 
@@ -47,14 +48,8 @@ def man_cmd(pattern=None, command=None, **args):
                 cmd = reg + command
             else:
                 cmd = (
-                    (reg +
-                     pattern).replace(
-                        "$",
-                        "").replace(
-                        "\\",
-                        "").replace(
-                        "^",
-                        ""))
+                    (reg + pattern).replace("$", "").replace("\\", "").replace("^", "")
+                )
             try:
                 CMD_LIST[file_test].append(cmd)
             except BaseException:
@@ -92,13 +87,7 @@ def command(**args):
         try:
             cmd = re.search(reg, pattern)
             try:
-                cmd = cmd.group(1).replace(
-                    "$",
-                    "").replace(
-                    "\\",
-                    "").replace(
-                    "^",
-                    "")
+                cmd = cmd.group(1).replace("$", "").replace("\\", "").replace("^", "")
             except BaseException:
                 pass
             try:
@@ -128,7 +117,7 @@ def command(**args):
 
 def register(**args):
     """Register a new event."""
-    pattern = args.get("pattern", None)
+    pattern = args.get("pattern")
     disable_edited = args.get("disable_edited", False)
     ignore_unsafe = args.get("ignore_unsafe", False)
     unsafe_pattern = r"^[^/!#@\$A-Za-z]"
@@ -158,9 +147,8 @@ def register(**args):
     if "insecure" in args:
         del args["insecure"]
 
-    if pattern:
-        if not ignore_unsafe:
-            args["pattern"] = pattern.replace("^.", unsafe_pattern, 1)
+    if pattern and not ignore_unsafe:
+        args["pattern"] = pattern.replace("^.", unsafe_pattern, 1)
 
     def decorator(func):
         async def wrapper(check):
@@ -168,11 +156,6 @@ def register(**args):
                 # Messages sent in channels can be edited by other users.
                 # Ignore edits that take place in channels.
                 return
-            if not LOGSPAMMER:
-                check.chat_id
-            else:
-                pass
-
             if not trigger_on_fwd and check.fwd_from:
                 return
 
@@ -186,14 +169,8 @@ def register(**args):
             try:
                 await func(check)
 
-            # Thanks to @kandnub for this HACK.
-            # Raise StopPropagation to Raise StopPropagation
-            # This needed for AFK to working properly
-
             except events.StopPropagation:
                 raise events.StopPropagation
-            # This is a gay exception and must be passed out. So that it doesnt
-            # spam chats
             except KeyboardInterrupt:
                 pass
             except BaseException:
