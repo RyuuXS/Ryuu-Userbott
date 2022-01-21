@@ -22,14 +22,14 @@ async def get_call(event):
 def user_list(l, n):
     for i in range(0, len(l), n):
         yield l[i : i + n]
-        
-        
+
+
 def vcmention(user):
     full_name = get_display_name(user)
     if not isinstance(user, types.User):
         return full_name
     return f"[{full_name}](tg://user?id={user.id})"
-    
+
 
 @register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
 async def start_voice(td):
