@@ -15,6 +15,105 @@ from traceback import format_exc
 from telethon import events
 from userbot import LOGSPAMMER, bot
 
+from userbot import CMD_HANDLER, CMD_LIST, bot
+
+
+def man_cmd(pattern=None, command=None, **args):
+    args["func"] = lambda e: e.via_bot_id is None
+    stack = inspect.stack()
+    previous_stack_frame = stack[1]
+    file_test = Path(previous_stack_frame.filename)
+    file_test = file_test.stem.replace(".py", "")
+    args.get("allow_sudo", False)
+    if pattern is not None:
+        if pattern.startswith(r"\#"):
+            args["pattern"] = re.compile(pattern)
+        elif pattern.startswith(r"^"):
+            args["pattern"] = re.compile(pattern)
+            cmd = pattern.replace("$", "").replace("^", "").replace("\\", "")
+            try:
+                CMD_LIST[file_test].append(cmd)
+            except BaseException:
+                CMD_LIST.update({file_test: [cmd]})
+        else:
+            if len(CMD_HANDLER) == 2:
+                catreg = "^" + CMD_HANDLER
+                reg = CMD_HANDLER[1]
+            elif len(CMD_HANDLER) == 1:
+                catreg = "^\\" + CMD_HANDLER
+                reg = CMD_HANDLER
+            args["pattern"] = re.compile(catreg + pattern)
+            if command is not None:
+                cmd = reg + command
+            else:
+                cmd = (
+                    (reg + pattern).replace("$", "").replace("\\", "").replace("^", "")
+                )
+            try:
+                CMD_LIST[file_test].append(cmd)
+            except BaseException:
+                CMD_LIST.update({file_test: [cmd]})
+
+    if "allow_edited_updates" in args and args["allow_edited_updates"]:
+        del args["allow_edited_updates"]
+
+    return events.NewMessage(**args)
+
+
+def command(**args):
+    args["func"] = lambda e: e.via_bot_id is None
+
+    stack = inspect.stack()
+    previous_stack_frame = stack[1]
+    file_test = Path(previous_stack_frame.filename)
+    file_test = file_test.stem.replace(".py", "")
+
+    pattern = args.get("pattern")
+    allow_edited_updates = args.get("allow_edited_updates", False)
+    args["incoming"] = args.get("incoming", False)
+    args["outgoing"] = True
+    if bool(args["incoming"]):
+        args["outgoing"] = False
+
+    try:
+        if pattern is not None and not pattern.startswith("(?i)"):
+            args["pattern"] = "(?i)" + pattern
+    except BaseException:
+        pass
+
+    reg = re.compile("(.*)")
+    if pattern is not None:
+        try:
+            cmd = re.search(reg, pattern)
+            try:
+                cmd = cmd.group(1).replace("$", "").replace("\\", "").replace("^", "")
+            except BaseException:
+                pass
+            try:
+                CMD_LIST[file_test].append(cmd)
+            except BaseException:
+                CMD_LIST.update({file_test: [cmd]})
+        except BaseException:
+            pass
+
+    def decorator(func):
+        async def wrapper(check):
+            if check.edit_date and check.is_channel and not check.is_group:
+                return
+            if not trigger_on_fwd and check.fwd_from:
+                return
+
+            if groups_only and not check.is_group:
+                await check.respond("`I don't think this is a group.`")
+                return
+
+        if allow_edited_updates:
+            bot.add_event_handler(func, events.MessageEdited(**args))
+        bot.add_event_handler(func, events.NewMessage(**args))
+
+    return decorator
+
+
 
 def register(**args):
     """Register a new event."""
@@ -95,11 +194,11 @@ def register(**args):
                 if not disable_errors:
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-                    text = "**Kyura-Project ERROR**\n"
-                    link = "Silahkan chat: @kyuraonly"
+                    text = "**Ryuu-Project ERROR**\n"
+                    link = "Silahkan chat: @RYUUSHINNI"
                     text += "Untuk melaporkan kesalahan"
                     text += f"tinggal teruskan pesan ini {link}.\n"
-                    text += "Kyura Siap Membantu Kamu\n"
+                    text += "Ryuu Siap Membantu Kamu\n"
 
                     ftext = "========== DISCLAIMER =========="
                     ftext += "\nThis file uploaded ONLY here,"
