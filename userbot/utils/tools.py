@@ -20,6 +20,7 @@ async def md5(fname: str) -> str:
             hash_md5.update(chunk)
     return hash_md5.hexdigest()
 
+
 def media_type(message):
     if message and message.photo:
         return "Photo"
@@ -38,7 +39,6 @@ def media_type(message):
     if message and message.document:
         return "Document"
     return None
-
 
 
 def humanbytes(size: Union[int, float]) -> str:
