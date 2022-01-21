@@ -88,6 +88,9 @@ LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 PMPERMIT_TEXT = os.environ.get("PMPERMIT_TEXT", None)
 PM_LIMIT = int(os.environ.get("PM_LIMIT", 6))
 
+# Custom Handler command
+CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
+
 # Custom Pmpermit pic
 PMPERMIT_PIC = (
     os.environ.get("PMPERMIT_PIC", None)
