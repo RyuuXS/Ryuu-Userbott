@@ -50,6 +50,11 @@
       "value": "-1001572742132",
       "required": true
     },
+    "CLEAR_PM_PERMIT": {
+      "description": "CLEAR PM_PERMIT Feature auto delete message at auto chat permit, this is a bot...' module.",
+      "value": "True",
+      "required": true
+    },
     "PM_AUTO_BAN": {
       "description": "PM Auto-Ban Feature Switch. Also known as the 'bleep blop, this is a bot...' module.",
       "value": "False",
