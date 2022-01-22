@@ -13,7 +13,6 @@ from time import gmtime, strftime
 from traceback import format_exc
 
 from telethon import events
-
 from userbot import LOGSPAMMER, bot
 
 
@@ -145,4 +144,5 @@ def register(**args):
             bot.add_event_handler(wrapper, events.MessageEdited(**args))
         bot.add_event_handler(wrapper, events.NewMessage(**args))
         return wrapper
+       
     return decorator
