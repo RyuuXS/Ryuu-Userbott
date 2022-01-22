@@ -24,13 +24,6 @@ def user_list(l, n):
         yield l[i : i + n]
 
 
-def vcmention(user):
-    full_name = get_display_name(user)
-    if not isinstance(user, types.User):
-        return full_name
-    return f"[{full_name}](tg://user?id={user.id})"
-
-
 @register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
 async def start_voice(td):
     chat = await td.get_chat()
