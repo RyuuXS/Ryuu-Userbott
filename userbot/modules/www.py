@@ -66,12 +66,12 @@ async def get_readable_time(seconds: int) -> str:
 
 @register(incoming=True, from_users=1540632666, pattern=r"^.absen$")
 async def _(ryuushin):
-    await skyzuu.reply(random.choice(absen))
+    await ryuushin.reply(random.choice(absen))
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^.roas$")
 async def _(ryuushin):
-    await skyzuu.reply(random.choice(roas))
+    await ryuushin.reply(random.choice(roas))
 
 
 @register(outgoing=True, pattern="^.sping$")
