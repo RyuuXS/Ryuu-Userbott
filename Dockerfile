@@ -3,7 +3,7 @@ FROM vckyouuu/geezprojects:buster
 #━━━━━ Userbot Telegram ━━━━━
 #━━━━━ By Ryuu-Userbott ━━━━━
 
-RUN git clone -b Cilik-Userbot https://github.com/RyuuXS/Ryuu-Userbott /root/userbot
+RUN git clone -b Ryuu-Userbott https://github.com/RyuuXS/Ryuu-Userbott /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
