@@ -1,4 +1,4 @@
-#     𝑹𝒀𝑼𝑼  -  𝑼𝑺𝑬𝑹𝑩𝑶𝑻
+#     𝙈𝘼𝙍𝙎𝙃𝘼  -  𝑼𝑺𝑬𝑹𝑩𝑶𝑻
 
 
 
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/059ffd95d051a196861e1.jpg">
+  ">
 </p>
 
 ## <p align="center">DEPLOY TO HEROKU</p>
