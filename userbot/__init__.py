@@ -222,7 +222,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://telegra.ph/file/a7e7d87b7bd734b741699.mp4")
+              or "")
 
 # Default .helpme Logo
 INLINE_PIC = (os.environ.get("INLINE_PIC")
