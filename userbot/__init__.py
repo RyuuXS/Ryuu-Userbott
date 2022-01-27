@@ -492,12 +492,12 @@ with bot:
                     f"────────────────────\n"
                     f"✏️ ** ID: ** {c.id}\n"
                     f"────────────────────\n"
-                    f"🤴 **ʙᴏᴛᴏꜰ: ** {DEFAULTUSER}\n\n"
+                    f"🤴 **ʙᴏᴛᴏꜰ: ** {MARSHA}\n\n"
                     f"➠ ** Ketik ** /rules supaya tahu peraturan Group ini\n"
                     f"➠ **Atau** Kalian Bisa Klik /notes Dibawah Jika Ada\n",
                     buttons=[
                         [Button.url("【﻿Ｃｈａｎｎｅｌ】",
-                                    "https://t.me/Belajarbersamaryuu")],
+                                    "https://t.me/caramenonton")],
                     ],
                 )
 
@@ -508,7 +508,7 @@ with bot:
             if event.message.from_id != uid:
                 await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"{START_WELCOME}\n\n**Powered By** : @RYUUSHINNI\n\n",
+                    f"{START_WELCOME}\n\n**Powered By** : @marshasthd\n\n",
                     buttons=[
                         [
                             custom.Button.inline("ꜱᴇᴛᴛɪɴɢꜱ", data="settings"),
@@ -540,7 +540,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"Usᴇʀʙᴏᴛ Tᴇʟᴇɢʀᴀᴍ\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ @Kyurasupport "
+                text = f"Usᴇʀʙᴏᴛ Tᴇʟᴇɢʀᴀᴍ\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ @caramenonton "
                 await event.edit(
                     text,
                     file=roselogo,
@@ -573,10 +573,10 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 text = (
-                    f"❁ __Saya Adalah Ryuu Userbott Yang Digunakan Banyak User Telegram__.\n\n"
+                    f"❁ __Saya Adalah Marsha Userbott Yang Digunakan Banyak User Telegram__.\n\n"
                     f"❁ __Saya Dibuat Hanya Untuk Bersenang Senang Ditelegram__.\n\n"
                     f"❁ __Kelebihan Saya Banyak, Saya Mempunyai 180 Modules__.\n\n"
-                    f"© @helpforRYUU")
+                    f"© @caramenonton")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -586,7 +586,7 @@ with bot:
                     ],
                 )
             else:
-                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 5.0\n🛠 Modules : {len(plugins)}\n✨ Branch : Ryuu-Userbott"
+                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 5.0\n🛠 Modules : {len(plugins)}\n✨ Branch : Marsha-Userbott"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @ tgbot.on(
@@ -652,7 +652,7 @@ with bot:
                     f"°__Mengubah Foto Alive Kamu, Yang Kamu Inginkan__.\n\n"
                     f"× `.set var RYUU_TEKS_KUSTOM` [**TEKS**]\n"
                     f"°__Mengganti Teks Yang Ada Command Ryuualive__.\n\n"
-                    f"© @helpforRYUU"
+                    f"© @caramenonton"
                 )
                 await event.edit(
                     text,
@@ -682,7 +682,7 @@ with bot:
                     f"°__Mengaktifkan Pmpermit Kalian Atau Disebut Pesan Otomatis__.\n\n"
                     f"× `.set pm_msg` [**REPLYCHAT**]\n"
                     f"°__Mengganti Teks Pmpermit Selera Kamu__.\n\n"
-                    f"© @helpforRYUU")
+                    f"© @caramenonton")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -711,7 +711,7 @@ with bot:
                     f"°__Mengubah Emoji Inline Yang Ada Dicomand__ `.helpme`\n\n"
                     f"× `.set var INLINE_PIC` [**LINK**]\n"
                     f"°__Mengubah Foto Yang Ada Dicomand__ `.helpme`\n\n"
-                    f"© @helpforRYUU")
+                    f"© @caramenonton")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -738,7 +738,7 @@ with bot:
                     f"Modules Name **pmbot**\n\n"
                     f"× `.set var START_WELCOME` [**TEKS**] \n"
                     f"°__Kamu Juga Bisa Mengubah Start Welcome Untuk Bot Kamu Yang Ini, Dengan Cara Diatas Dan Kata Kata Bebas__.\n\n"
-                    f"© @helpforRYUU")
+                    f"© @caramenonton")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -763,11 +763,11 @@ with bot:
             if event.query.user_id == uid:
                 text = (
                     f"Modules Name **Pembaruan**\n\n"
-                    f"× **Pembaruan Data Untuk 𝑹𝒀𝑼𝑼-𝑼𝑺𝑬𝑹𝑩𝑶𝑻, Command Untuk Pembaruan**.\n"
+                    f"× **Pembaruan Data Untuk 𝙈𝘼𝙍𝙎𝙃𝘼-𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Command Untuk Pembaruan**.\n"
                     f"⚒Pembaruan Data :\n"
                     f"`.update deploy`\n"
                     f"`update`\n\n"
-                    f"© @helpforRYUU")
+                    f"© @caramenonton")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -829,7 +829,7 @@ with bot:
                     f" ✥ **✦҈͜͡ᴘᴇᴍɪʟɪᴋ :** {ALIVE_NAME}  "
                     "\n╚════════════════════╝"
                     f"✥ **Sisa Dyno Heroku** `{day}` **Hari Lagi**"
-                    f"© @helpforRYUU"
+                    f"© @caramenonton"
                 )
                 await event.edit(
                     text,
@@ -873,7 +873,7 @@ with bot:
                     file=roselogo,
                     link_preview=True,
                     buttons=[
-                        [Button.url("ᴄʜᴀɴɴᴇʟ", "t.me/Belajarbersamaryuu")],
+                        [Button.url("ᴄʜᴀɴɴᴇʟ", ".me/caramenonton")],
                     ],
                 )
 
@@ -887,28 +887,28 @@ with bot:
                 result = builder.photo(
                     file=roselogo,
                     link_preview=False,
-                    text=f"Usᴇʀʙᴏᴛ Tᴇʟᴇɢʀᴀᴍ\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ @helpforRYUU".format(
+                    text=f"Usᴇʀʙᴏᴛ Tᴇʟᴇɢʀᴀᴍ\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ @caramenonton".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari **⚡𝑹𝒀𝑼𝑼☮︎𝑼𝑺𝑬𝑹𝑩𝑶𝑻​⚡**",
+                    "Bantuan Dari **⚡𝙈𝘼𝙍𝙎𝙃𝘼𝙐𝙎𝙀𝙍𝘽𝙊𝙏​⚡**",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True,
                 )
             else:
-                result = builder.article(" **⚡𝑹𝒀𝑼𝑼☮︎𝑼𝑺𝑬𝑹𝑩𝑶𝑻⚡**",
-                                         text="""°𝑹𝒀𝑼𝑼☮︎𝑼𝑺𝑬𝑹𝑩𝑶𝑻°""",
-                                         buttons=[[custom.Button.url("ʀʏᴜᴜsʜɪɴ",
-                                                                     "https://github.com/RyuuXS/Ryuu-Userbott"),
+                result = builder.article(" **⚡𝙈𝘼𝙍𝙎𝙃𝘼𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡**",
+                                         text="""°𝙈𝘼𝙍𝙎𝙃𝘼𝙐𝙎𝙀𝙍𝘽𝙊𝙏°""",
+                                         buttons=[[custom.Button.url("marshasthd",
+                                                                     "https://github.com/DIMSUMBOYS/Marsha-Userbott"),
                                                    custom.Button.url("ᴄʜᴀɴɴᴇʟ​",
-                                                                     "t.me/Belajarbersamaryuu"),
+                                                                     "t.me/caramenonton"),
                                                    ],
                                                   [custom.Button.url("ʟɪᴄᴇɴsᴇ​",
-                                                                     "https://github.com/RyuuXS/Ryuu-Userbott/LICENSE",
+                                                                     "https://github.com/DIMSUMBOYS/Marsha-Userbott/LICENSE",
                                                                      )],
                                                   ],
                                          link_preview=False,
@@ -947,8 +947,8 @@ with bot:
                     link_preview=True,
                     buttons=[
                         [
-                            Button.url("❈ꜱᴜᴘᴘᴏʀᴛ❈", "t.me/helpforRYUU"),
-                            Button.url("❈ᴄʜᴀɴɴᴇʟ❈", "t.me/Belajarbersamaryuu"),
+                            Button.url("❈ꜱᴜᴘᴘᴏʀᴛ❈", "t.me/marshasthd"),
+                            Button.url("❈ᴄʜᴀɴɴᴇʟ❈", "t.me/caramenonton"),
                         ],
                         [custom.Button.inline(
                             "°ᴏᴘᴇɴ ᴍᴇɴᴜ°", data="open_plugin")],
