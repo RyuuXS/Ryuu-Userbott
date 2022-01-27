@@ -1,7 +1,7 @@
 {
-  "name": "Ryyu-Userbott",
-  "description": "[Ryuu-Userbott] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
-  "logo": "https://telegra.ph/file/059ffd95d051a196861e1.jpg",
+  "name": "Marsha-Userbott",
+  "description": "[Marsha-Userbott] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "logo": "",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
 ],
-  "repository": "https://github.com/RyuuXS/Ryuu-Userbott",
-  "telegram": "https://t.me/RYUUSHINNI",
-  "success_url": "https://t.me/helpforRYUU",
+  "repository": "https://github.com/DIMSUMBOYS/Marsha-Userbot",
+  "telegram": "https://t.me/marshasthd",
+  "success_url": "https://t.me/marshasthd",
   "stack": "container",
   "env": {
     "API_KEY": {
