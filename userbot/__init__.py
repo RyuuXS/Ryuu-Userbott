@@ -374,7 +374,7 @@ with bot:
 async def check_alive():
     await bot.send_message(
         BOTLOG_CHATID,
-        "**Userbot Has Been Deployed༒︎**\n━━━━━━━━━━━━━━━\n❃ **Branch :** `Ryuu-Userbott`\n❃ **BotVer :** `8.0.0`\n━━━━━━━━━━━━━━━\n❃ **Support :** @helpforRYUU\n━━━━━━━━━━━━━━━")
+        "**Userbot Has Been Deployed༒︎**\n━━━━━━━━━━━━━━━\n❃ **Branch :** `Marshaa-Userbott`\n❃ **BotVer :** `8.0.0`\n━━━━━━━━━━━━━━━\n❃ **Support :** @caramenonton\n━━━━━━━━━━━━━━━")
     return
 
 
