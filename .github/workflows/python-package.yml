@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ Skyzuu-Userbot ]
+    branches: [ Marsha-Userbot ]
   pull_request:
-    branches: [ Skyzuu-Userbot ]
+    branches: [ Marsha-Userbot ]
 
 jobs:
   build:
