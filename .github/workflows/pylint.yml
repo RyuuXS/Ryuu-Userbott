@@ -30,9 +30,9 @@ jobs:
       # commit changes
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Ryuu-Userbott: auto fixes'
+          commit_message: 'Marsha-Userbott: auto fixes'
           commit_options: '--no-verify --signoff'
           repository: .
-          commit_user_name: Ryuu
-          commit_user_email: daudilham0606@gmail.com
-          commit_author: Ryuu <daudilham0606@gmail.com>
+          commit_user_name: Marsha
+          commit_user_email: bekbek3105@gmail.com
+          commit_author: Marsha <bekbek3105@gmail.com>
