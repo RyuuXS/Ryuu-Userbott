@@ -1,5 +1,5 @@
-# Ryuushinni
-# Ryuu-Userbott
+# marshasthd
+# Marsha-Userbott
 
 from userbot import CMD_HELP
 from userbot.events import register
